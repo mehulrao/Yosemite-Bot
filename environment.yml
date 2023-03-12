@@ -1,0 +1,9 @@
+name: twilio
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - twilio
+  - python-dotenv
+  - autopep8
+prefix: /opt/homebrew/Caskroom/miniforge/base/envs/twilio
