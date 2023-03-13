@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+    yosemite-bot:
+        image: yosemite-bot:latest
+        restart: unless-stopped
+        volumes:
+            - type: bind
+              source: src/.env
+              target: /app/.env

@@ -4,6 +4,8 @@ from time import sleep
 count = 0
 total_count = 0
 
+send_sms("Starting script...")
+
 while get_available_rooms() <= 0:
     print("Not available")
     sleep(60)
