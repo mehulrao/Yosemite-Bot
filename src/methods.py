@@ -24,9 +24,13 @@ def get_available_rooms():
 
     regex = "\{(.*?)\}"
     text = re.search(regex, response.text).group(0)
-    text = json.loads(text)
+    try:
+        text = json.loads(text)
+        available = text["AvailableCount"]
+    except:
+        print("Error: " + text)
+        available = 0
 
-    available = text["AvailableCount"]
     return available
 
 
