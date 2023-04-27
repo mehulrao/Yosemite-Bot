@@ -9,7 +9,7 @@ def get_yosemite_rooms() -> int:
     url = "https://reservations.ahlsmsworld.com/Yosemite/Search/GetInventoryCountData"
 
     querystring = {"callback": "$.wxa.on_datepicker_general_availability_loaded", "CresPropCode": "000000",
-                   "MultiPropCode": "Y", "StartDate": "Mon Jun 19 2023", "EndDate": "Mon Jun 19 2023", "_": "1678660305060"}
+                   "MultiPropCode": "Y", "StartDate": "Sun Jun 18 2023", "EndDate": "Sun Jun 18 2023", "_": "1678660305060"}
 
     payload = ""
     headers = {

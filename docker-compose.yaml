@@ -7,3 +7,5 @@ services:
             - type: bind
               source: src/.env
               target: /app/.env
+        environment:
+            - PYTHONUNBUFFERED=1
